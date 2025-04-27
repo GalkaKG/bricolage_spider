@@ -1,5 +1,3 @@
-# Scrapy settings for bricolage_spider project
-
 BOT_NAME = 'bricolage_spider'
 
 SPIDER_MODULES = ['bricolage_spider.spiders']
@@ -12,8 +10,6 @@ USER_AGENT = (
 )
 
 ROBOTSTXT_OBEY = True
-
-# DOWNLOAD_DELAY = 3
 
 # Logging
 LOG_FILE = 'logs/scrapy_output.log'
