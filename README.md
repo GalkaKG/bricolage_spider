@@ -63,6 +63,10 @@ The results will be saved in JSON format in the results/ directory. Each saved J
 
 ``technical_specifications``: Product technical specifications
 
+### Data Structure in `stores_info.json`:
+
+The `stores_info.json` file contains the availability of products in different stores.
+
 ## Tests:
 The project also includes test scripts that verify whether the extracted data is correct. To run the tests, use the command:
 

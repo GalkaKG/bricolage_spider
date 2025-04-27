@@ -11,11 +11,17 @@ USER_AGENT = (
 
 ROBOTSTXT_OBEY = True
 
-# Logging
 LOG_FILE = 'logs/scrapy_output.log'
 LOG_LEVEL = 'INFO'
 
-# Output feed
-FEED_FORMAT = 'json'
-FEED_EXPORT_ENCODING = 'utf-8'
-FEED_URI = 'results/output.json'
+FEEDS = {
+    'results/output.json': {
+        'format': 'json',
+        'encoding': 'utf8',
+        'overwrite': True,
+    },
+}
+
+ITEM_PIPELINES = {
+    'bricolage_spider.pipelines.JsonWriterPipeline': 300,
+}
